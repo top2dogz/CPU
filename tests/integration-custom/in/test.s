@@ -5,3 +5,15 @@ sub t1 t1 t2
 and t0 t0 t1
 or t0 t0 t1
 slt t1 t1 t2
+addi t1 x0 40
+addi t2 x0 -1
+slt t3 t1 t2
+addi t4 x0 31
+srl t2 t2 t4
+slt t2 t2 t4
+sra t2 t2 t4
+addi t5 x0 5
+mul t2 t2 t5
+sll t5 t5 t4
+mulh t5 t2 t5
+
